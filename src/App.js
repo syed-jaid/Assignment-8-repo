@@ -8,7 +8,7 @@ function App() {
       {/* this is header part */}
       <Header></Header>
       {/* main part */}
-      {/* <AllCart></AllCart> */}
+      <AllCart></AllCart>
     </div>
   );
 }
