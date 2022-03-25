@@ -4,6 +4,7 @@ import './AllCart.css'
 const AllCart = () => {
     const [products, setProducts] = useState([]);
     const [names, setnames] = useState([])
+    const [randomnames, setnamesRandom] = useState([])
     useEffect(() => {
         fetch('Product.json')
             .then(res => res.json())
@@ -13,14 +14,22 @@ const AllCart = () => {
         const { name } = props;
         const getname = name
         const newName = [...names, <br />, getname]
-        if (names.length > 6) {
-            alert('You can not add more then 5 watch')
+        setnames(newName)
+        setnamesRandom([])
+    }
+    const RandomName = () => {
+        const Allnames = names;
+        setnamesRandom(Allnames)
+        const reandoms = Math.round(Math.random() * 10)
+        if (reandoms === 1 || reandoms === 3 || reandoms === 5 || reandoms === 7) {
+            setnamesRandom(Allnames[reandoms])
+            setnames([])
         } else {
-            setnames(newName)
+            setnamesRandom(Allnames[1])
+            setnames([])
         }
 
     }
-
     return (
         <div className='main-diiv'>
             <div className='all-cart'>
@@ -31,7 +40,8 @@ const AllCart = () => {
             <div className='display-name'>
                 <h1>display name </h1>
                 <h2 className='added-cart-name'>{names}</h2>
-                <button className='display-rendom'>Reandom</button>
+                <h2 className='added-cart-name'>{randomnames}</h2>
+                <button onClick={RandomName} className='display-rendom'>Reandom</button>
                 <br />
                 <button onClick={() => setnames([])} className='display-delets'>Clear All</button>
             </div>
