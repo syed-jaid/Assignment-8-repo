@@ -1,10 +1,17 @@
-.all-cart{
-border: 2px solid black;
-}
 .main-diiv{
 text-align: center;
 }
-@media only screen and (min-width: 600px) {
+.display-name{
+    border: 3px solid rgb(255, 255, 255);
+    margin: 10px;
+    background-color: rgb(170, 231, 255);;
+    border-radius: 16px ;
+    box-shadow: 1px 1px 10px rgb(154, 226, 255);
+    height: 500px;
+    position: sticky;
+    top: 30px;
+}
+@media only screen and (min-width: 800px) {
     .all-cart{
       display: grid;
       grid-template-columns: auto auto auto;

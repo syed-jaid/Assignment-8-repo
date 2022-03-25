@@ -15,7 +15,7 @@ const AllCart = () => {
                     products.map(data => <Cart products={data}></Cart>)
                 }
             </div>
-            <div>
+            <div className='display-name'>
                 <h1>display name</h1>
             </div>
         </div>
