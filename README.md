@@ -1,6 +1,6 @@
 # Happy Shop 
 
-## [live link](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## [live link](https://helpful-yeot-d67f65.netlify.app/) for more information.
 
 
 ### Thanks To The Programming Hero .

@@ -6,7 +6,7 @@ const Anser = () => {
             <h1>Qus : How React works</h1>
             <p>Anser : React is a very popular JavaScript library. React is a JavaScript library (not a framework). React works declaratively. The declarative code is a navbar, a header, a filter, and a list.
                 <br />
-                We create components to show it in the Ul. Components use it over and over again in the UI. Creates React virtual dom and changes what changes in the code . React uses props to pass data from the parent to the child components.
+                We create components to show it in the Ul. Components use it over and over again in the UI. Creates React virtual dom and changes what changes in the code . React uses props to pass data from the parent to the child components .
             </p>
             <h1>Qus : props <span>vs</span>  State</h1>
             <p>
