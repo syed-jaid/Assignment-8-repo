@@ -48,9 +48,10 @@ const AllCart = () => {
                 }
             </div>
             <div className='display-name'>
+                <h1>Selected</h1>
                 <h2 className='added-cart-name' >{names}</h2>
                 <h2 className='added-cart-names'>{randomnames}</h2>
-                <button onClick={RandomName} className='display-rendom'>Reandom</button>
+                <button onClick={RandomName} className='display-rendom'>CHOOSE 1 FOR ME</button>
                 <br />
                 <button onClick={ClearAll} className='display-delets'>Clear All</button>
             </div>
