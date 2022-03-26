@@ -3,6 +3,7 @@ border: 3px solid rgb(135, 211, 255);
 box-shadow: 1px 1px 10px rgb(170, 231, 255);
 margin: 10px;
 border-radius: 12px;
+
 align-items: center;
 width: 80;
 margin-left: auto;
@@ -10,6 +11,7 @@ margin-right: auto;
 }
 .cart-img{
 width: 300px;
+height: 300px;
 margin: 5px;
 border-radius: 12px;
 }
