@@ -10,7 +10,7 @@ const Cart = (props) => {
             <div className='cart-info'>
                 <h1>{name}</h1>
                 <h2>price :{balance}</h2>
-                <button onClick={() => props.AddToCart(props.products)} className='cart-btn'>Add To Card <FontAwesomeIcon icon={faShoppingBag} /></button>
+                <button onClick={() => props.AddToCart(props.products)} className='cart-btn'>ADD TO CARD <FontAwesomeIcon icon={faShoppingBag} /></button>
             </div>
 
         </div>
