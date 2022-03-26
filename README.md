@@ -1,6 +1,6 @@
 # Happy Shop 
 
-## [live link](https://helpful-yeot-d67f65.netlify.app/) for more information.
+## [live link](https://lustrous-dusk-fab802.netlify.app) for more information.
 
 
 ### Thanks To The Programming Hero .
