@@ -7,7 +7,7 @@ text-align: center;
     background-color: rgb(170, 231, 255);;
     border-radius: 16px ;
     box-shadow: 1px 1px 10px rgb(154, 226, 255);
-    height: 400px;
+    height: 500px;
     position: sticky;
     top: 30px;
     overflow-y: scroll;
@@ -17,7 +17,10 @@ text-align: center;
 color: white;
 text-shadow: 1px 1px 10px rgb(173, 173, 173);
 }
-
+.added-cart-names{
+    color: white;
+    text-shadow: 1px 1px 10px rgb(173, 173, 173);
+    }
 .display-rendom{
     padding: 8px 30px ;
     font-size: 17px;

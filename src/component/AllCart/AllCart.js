@@ -14,8 +14,14 @@ const AllCart = () => {
         const { name } = props;
         const getname = name
         const newName = [...names, <br />, getname]
-        setnames(newName)
+
         setnamesRandom([])
+        if (names.length > 6) {
+            alert('You can not add more then 4 product')
+        }
+        else {
+            setnames(newName)
+        }
     }
     const RandomName = () => {
         const Allnames = names;
@@ -30,20 +36,23 @@ const AllCart = () => {
         }
 
     }
+    const ClearAll = () => {
+        setnames([]);
+        setnamesRandom([]);
+    }
     return (
         <div className='main-diiv'>
             <div className='all-cart'>
                 {
-                    products.map(data => <Cart key={data.id} AddToCart={AddToCart} products={data}></Cart>)
+                    products.map(data => <Cart AddToCart={AddToCart} key={data.id} products={data}></Cart>)
                 }
             </div>
             <div className='display-name'>
-                <h1>display name </h1>
-                <h2 className='added-cart-name'>{names}</h2>
-                <h2 className='added-cart-name'>{randomnames}</h2>
+                <h2 className='added-cart-name' >{names}</h2>
+                <h2 className='added-cart-names'>{randomnames}</h2>
                 <button onClick={RandomName} className='display-rendom'>Reandom</button>
                 <br />
-                <button onClick={() => setnames([])} className='display-delets'>Clear All</button>
+                <button onClick={ClearAll} className='display-delets'>Clear All</button>
             </div>
         </div>
     );
